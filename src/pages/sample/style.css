@@ -1,0 +1,12 @@
+.samplebox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.samplebox div {
+  width: 100%;
+}
+.samplebox div p {
+  width: 100%;
+}

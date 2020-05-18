@@ -5,7 +5,7 @@ import { persistReducer } from 'redux-persist' // 合并 reduce
 import storage from 'redux-persist/lib/storage' // 创建 store
 // 多层对象 做数据持久化
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2'
-import { login, table } from '@/reducer'
+import { login, table, form, sample, } from '@/reducer'
 
 // 我要对哪些 reduce 的 state 做数据持久化
 const rootPersistConfig = {
@@ -23,7 +23,10 @@ const myPersistReducer = persistReducer(
   rootPersistConfig,
   combineReducers({
     login,
-    table
+    table,
+    form,
+    sample,
+ 
   }
 ))
 

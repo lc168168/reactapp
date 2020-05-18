@@ -22,6 +22,7 @@ class Home extends Component {
             <Nav />
           </div>
           <div className="botrig">
+           
             <Route path="/home/chart" component={Chart}/>
             <Route path="/home/form" component={Form}/>
             <Route path="/home/tab" component={Table}/>
